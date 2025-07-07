@@ -1,0 +1,35 @@
+body {
+  background: #121212;
+  color: white;
+  font-family: Open Sans, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#text {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.heart {
+  font-size: 4rem;
+  animation: beat 1s infinite;
+  color: red;
+  display: none;
+}
+
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
